@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hekto</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+
+  <!-- start header one of page -->
+  <body class="bg-[#FFFFFF]">
+    <!-- close header one of page-->
+
+
+    <!-- head-top -->
+
+     <div class="flex flex-row  items-center justify-around gap-120  p-5 bg-[#7E33E0] text-[#F1F1F1]">
+      <div class="flex flex-row gap-5">
+        <a href="#">mhhasanul@gmail.com</a>
+        <p>(12345)67890</p>
+      </div>
+      <div class="list-none flex gap-5">
+        <li><a href="">English</a></li>
+        <li><a href="">USD</a></li>
+        <li><a href="">Login</a></li>
+        <li><a href="">Wishlist</a></li>
+      </div>
+     </div>
+    <!-- start head two  -->
+
+    <nav class="bg-white border-gray-200 w-full text-[#0D0E43] ">
+      <div
+        class="w-full"
+      >
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a
+          href="#"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap "
+            > <a href="../pages/index.html">Hekto</a></span
+          >
+        </a>
+        <div class="flex md:order-2">
+          <button
+            type="button"
+            data-collapse-toggle="navbar-search"
+            aria-controls="navbar-search"
+            aria-expanded="false"
+            class="md:hidden text-gray-500 "
+          >
+            <span class="sr-only">Search</span>
+          </button>
+          <div class="relative hidden md:block">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 "
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+              <span class="sr-only">Search icon</span>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
+              placeholder="Search..."
+            />
+          </div>
+          <button
+            data-collapse-toggle="navbar-search"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
+            aria-controls="navbar-search"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-search"
+        >
+          <div class="relative mt-3 md:hidden">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 "
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="search-navbar"
+              class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
+              placeholder="Search..."
+            />
+          </div>
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white "
+          >
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 px-3 text-[#fb2e86] rounded-sm tex hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto  "
+              >
+                Home
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 "
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="./shoplist.html"
+                      class="block px-4 py-2 hover:bg-gray-100 "
+                      >Shop List</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./productdetail.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Product Details</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./shoppingcard.html"
+                      class="block px-4 py-2 hover:bg-gray-100"
+                      >Shopping curt</a
+                    >
+                  </li>
+                </ul>
+                <div class="py-1">
+              </div>
+            </li>
+            <li>
+              <a
+                href="./pages.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                >Pages</a
+              >
+            </li>
+            <li>
+              <a
+                href="./products.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                href="./blog.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="./shop.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contact.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+        
+      </div>
+    </nav>
+   
+
+
+
+    <!-- close head two-->
+
+
+
+    <!-- start main-content  -->
+<div class="bg-violet-100  w-full h-96 flex gap-4 items-center justify-center mx-auto p-1 relative ">
+  <img src="../assets//content/ligt.png" alt="" class="w-80 absolute left-1">
+   <div class="content-one flex flex-col gap-4 max-w-md ">
+
+    <p class="text-[#FB2E86] ">Best Furniture For Your Castle...</p>
+    <h1 class="font-bold text-2xl">New Furniture Collection Trends 2020</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p>
+    <button class="bg-[#FB2E86] text-white px-6 py-3 w-40 rounded-sm hover:bg-pink-600 transition ">
+      Shop Now
+    </button>
+   </div>
+ 
+   <div class="content-two w-80 flex absolute right-20 mb-80">
+    <img src="../assets/content/Ellipse 60.svg" alt="" class="absolute">
+    <img src="../assets/content/Ellipse 60.svg" alt="" class="absolute mt-6">
+    <img src="..//assets/content/main-img.png" alt="" class="absolute ">
+ 
+
+   </div>
+</div>  
+<!-- close main-content  -->
+
+ <!-- start menu-one product -->
+<div class="maun-product m-10">
+  <!-- discription -->
+  <!--  -->
+<div class="description flex items-center justify-center">
+  <h2 class="font-bold text-[#1A0B5B] p-5  m-auto">Featured Products</h2>
+ </div>
+
+   <!-- card img -->
+     <div class="featured-pt max-w-screen-lg mx-auto flex gap-2 ">
+      <!-- card-1 -->
+      <div class="flex-1 inline-flex flex-col items-center  shadow-xl  ">
+        <div class="bg-[#F6F7FB] pt-5 w-full flex justify-center  ">
+          <img src="../assets/card-1/chair-1.svg" alt="">
+        </div>
+        <!-- card-foot -->
+        <div class="card-foot max-w-screen-lg bg-[#FFFFFF]  flex flex-col gap-2 items-center justify-center w-full p-5">
+          <h2  class="text-[#FB2E86] font-bold ">Cantilever chair</h2>
+          <div class="progress flex gap-1 m-auto">
+              <div class="w-5   ">
+                <div class="bg-[#05E6B7] h-1.5 rounded-full " style="width: 100%"></div>
+              </div>
+              <div class="w-5  ">
+                <div class="bg-[#F701A8] h-1.5 rounded-full" style="width: 100%"></div>
+              </div>
+              <div class="w-5  ">
+                <div class="bg-[#00009D] h-1.5 rounded-full " style="width: 100%"></div>
+              </div>
+          </div>          
+          <p class="text-[#151875]">Code - Y523201</p>
+          <p class="text-[#151875]">$42.00</p>
+        </div>
+      </div>
+      <!-- card-2 -->
+      <div class="flex-1 inline-flex flex-col items-center  shadow-xl  ">
+        <div class="bg-[#F6F7FB] pt-5 w-full flex justify-center  ">
+          <img src="../assets/image 1.svg" alt="">
+        </div>
+        <!-- card-foot -->
+        <div class="card-foot max-w-screen-lg bg-[#FFFFFF]  flex flex-col gap-2 items-center justify-center w-full p-5">
+          <h2  class="text-[#FB2E86] font-bold ">Cantilever chair</h2>
+          <div class="progress flex gap-1 m-auto">
+              <div class="w-5   ">
+                <div class="bg-[#05E6B7] h-1.5 rounded-full " style="width: 100%"></div>
+              </div>
+              <div class="w-5  ">
+                <div class="bg-[#F701A8] h-1.5 rounded-full" style="width: 100%"></div>
+              </div>
+              <div class="w-5  ">
+                <div class="bg-[#00009D] h-1.5 rounded-full " style="width: 100%"></div>
+              </div>
+          </div>          
+          <p class="text-[#151875]">Code - Y523201</p>
+          <p class="text-[#151875]">$42.00</p>
+        </div>
+      </div>
+      <!-- card-3 -->
+      <div class="flex-1 inline-flex flex-col items-center  shadow-xl  ">
+        <div class="bg-[#F6F7FB] pt-5 w-full flex justify-center  ">
+          <img src="../assets/image 1169.svg" alt="">
+        </div>
+        <!-- card-foot -->
+        <div class="card-foot max-w-screen-lg bg-[#FFFFFF]  flex flex-col gap-2 items-center justify-center w-full p-5">
+          <h2  class="text-[#FB2E86] font-bold ">Cantilever chair</h2>
+          <div class="progress flex gap-1 m-auto">
+              <div class="w-5   ">
+                <div class="bg-[#05E6B7] h-1.5 rounded-full " style="width: 100%"></div>
+              </div>
+              <div class="w-5  ">
+                <div class="bg-[#F701A8] h-1.5 rounded-full" style="width: 100%"></div>
+              </div>
+              <div class="w-5  ">
+                <div class="bg-[#00009D] h-1.5 rounded-full " style="width: 100%"></div>
+              </div>
+          </div>          
+          <p class="text-[#151875]">Code - Y523201</p>
+          <p class="text-[#151875]">$42.00</p>
+        </div>
+      </div>
+      <!-- card-4 -->
+      <div class="flex-1 inline-flex flex-col items-center  shadow-xl  ">
+        <div class="bg-[#F6F7FB] pt-5 w-full flex justify-center  ">
+          <img src="../assets/image 3 (1).svg" alt="">
+        </div>
+        <!-- card-foot -->
+        <div class="card-foot max-w-screen-lg bg-[#FFFFFF]  flex flex-col gap-2 items-center justify-center w-full p-5">
+          <h2  class="text-[#FB2E86] font-bold ">Cantilever chair</h2>
+          <div class="progress flex gap-1 m-auto">
+              <div class="w-5   ">
+                <div class="bg-[#05E6B7] h-1.5 rounded-full " style="width: 100%"></div>
+              </div>
+              <div class="w-5  ">
+                <div class="bg-[#F701A8] h-1.5 rounded-full" style="width: 100%"></div>
+              </div>
+              <div class="w-5  ">
+                <div class="bg-[#00009D] h-1.5 rounded-full " style="width: 100%"></div>
+              </div>
+          </div>          
+          <p class="text-[#151875]">Code - Y523201</p>
+          <p class="text-[#151875]">$42.00</p>
+        </div>
+      </div>
+     </div>
+ <!-- close menu-one product -->
+
+ <!-- start menu-two product -->
+  <!-- discription -->
+  <div class="description flex items-center justify-center flex-col m-10">
+    <div>
+    <h2 class="font-bold text-[#1A0B5B] p-5  m-auto">Leatest Products</h2>
+  </div>
+  <div>
+    <ul class="list-none flex gap-10 text-[#151875] font-medium ">
+    <li><a href="#"><span class="text-[#FB2E86]  text-decoration-line: underline  underline-offset-5">New Arrival</span></a></li>
+    <li><a href="#" >Best Seller</a></li>
+    <li><a href="#">Featured</a></li>
+    <li><a href="#">Special Offer</a></li>
+  </ul>
+  </div>
+  </div>
+
+  
+<div class="menu-latesPt  max-w-screen-lg mx-auto flex flex-col   ">
+  <div class="flex gap-10 mb-10 flex-wrap">
+  <!-- card-1 -->
+  <div class="flex-1 inline-flex flex-col items-center shadow-s">
+    <div class="bg-[#EEEFFB] pt-5 w-full flex justify-center">
+    <img src="../assets/image 1166.svg" alt="">
+  </div>
+   <div class="flex items-center   justify-between w-full">
+   <p class="text-[#151875] flex-1  font-normal ">
+    <span class="decoration-gray-300 text-decoration-line: underline  underline-offset-5">Comfort Handy </span></p>
+   <p class="text-[#151875] flex-1 text-right "> <span>42$.00</span> <span class="text-[#FB2448] text-decoration-line: line-through ">$65.00</span></p>
+   </div>
+  </div>
+<!-- card-2 -->
+<div class="flex-1 inline-flex flex-col items-center shadow-s">
+  <div class="bg-[#EEEFFB] pt-5 w-full flex justify-center">
+  <img src="../assets/image 15.svg" alt="">
+</div>
+ <div class="flex items-center   justify-between w-full">
+ <p class="text-[#151875] flex-1  font-normal ">
+  <span class="decoration-gray-300 text-decoration-line: underline  underline-offset-5">Comfort Handy </span></p>
+ <p class="text-[#151875] flex-1 text-right "> <span>42$.00</span> <span class="text-[#FB2448] text-decoration-line: line-through ">$65.00</span></p>
+ </div>
+</div>
+  <!-- card-3 -->
+  <div class="flex-1 inline-flex flex-col items-center shadow-s">
+    <div class="bg-[#EEEFFB] pt-5 w-full flex justify-center">
+    <img src="../assets/card-1/chair-1.svg" alt="">
+  </div>
+   <div class="flex items-center   justify-between w-full">
+   <p class="text-[#151875] flex-1  font-normal ">
+    <span class="decoration-gray-300 text-decoration-line: underline  underline-offset-5">Comfort Handy </span></p>
+   <p class="text-[#151875] flex-1 text-right "> <span>42$.00</span> <span class="text-[#FB2448] text-decoration-line: line-through ">$65.00</span></p>
+   </div>
+  </div>
+</div>
+<!-- row two -->
+<div class=" flex gap-10 mb-10 flex-wrap w-full">
+   <!-- card-4 -->
+   <div class="flex-1 inline-flex flex-col items-center shadow-s">
+    <div class="bg-[#EEEFFB] pt-5 w-full flex justify-center">
+    <img src="../assets/image 23.svg" alt="">
+  </div>
+   <div class="flex items-center   justify-between w-full">
+   <p class="text-[#151875] flex-1  font-normal ">
+    <span class="decoration-gray-300 text-decoration-line: underline  underline-offset-5">Comfort Handy </span></p>
+   <p class="text-[#151875] flex-1 text-right "> <span>42$.00</span> <span class="text-[#FB2448] text-decoration-line: line-through ">$65.00</span></p>
+   </div>
+  </div>
+<!-- card-5 -->
+<div class="flex-1 inline-flex flex-col items-center shadow-s">
+  <div class="bg-[#EEEFFB] pt-5 w-full flex justify-center">
+  <img src="../assets/image 32.svg" alt="">
+</div>
+ <div class="flex items-center   justify-between w-full">
+ <p class="text-[#151875] flex-1  font-normal ">
+  <span class="decoration-gray-300 text-decoration-line: underline  underline-offset-5">Comfort Handy </span></p>
+ <p class="text-[#151875] flex-1 text-right "> <span>42$.00</span> <span class="text-[#FB2448] text-decoration-line: line-through ">$65.00</span></p>
+ </div>
+</div>
+  <!-- card-6 -->
+  <div class="flex-1 inline-flex flex-col items-center shadow-s">
+    <div class="bg-[#EEEFFB] pt-5 w-full flex justify-center">
+    <img src="../assets/image 3 (1).svg" alt="">
+  </div>
+   <div class="flex items-center   justify-between w-full">
+   <p class="text-[#151875] flex-1  font-normal ">
+    <span class="decoration-gray-300 text-decoration-line: underline  underline-offset-5">Comfort Handy </span></p>
+   <p class="text-[#151875] flex-1 text-right "> <span>42$.00</span> <span class="text-[#FB2448] text-decoration-line: line-through ">$65.00</span></p>
+   </div>
+  </div>
+  
+
+</div>
+</div>
+ <!-- close menu-two product -->
+
+
+
+
+<!-- start Shopex offer! -->
+<div class="description flex items-center justify-center">
+  <h2 class="font-bold text-[#1A0B5B] p-5  m-auto">What Shopex Offer!</h2>
+ </div>
+
+
+   <!-- card img -->
+   <div class="featured-pt max-w-screen-lg mx-auto flex  gap-7 ">
+    <!-- card-1 -->
+    <div class="flex-1 inline-flex flex-col items-center justify-center shadow-md bg-[#FFFFFF] gap-5 h-70 ">
+      <div class="bg-[#FFFFFF]  w-full flex justify-center  ">
+        <img src="../assets/Group.svg" alt="">
+      </div>
+      <!-- card-foot -->
+      <div class="flex"><h2  class="text-[#151875] font-bold ">24/7 Support</h2></div>
+      <div class="flex flex-col  items-center justify-center ">   
+          <p class="text-[#1A0B5B4D] ">Lorem ipsum dolor sit amet, 
+          <p class="text-[#1A0B5B4D] ">consectetur adipisicing elit.</p>
+          <p class="text-[#1A0B5B4D] "> Massa purus gravida.</p>
+        </div>  
+    </div>
+    <!-- card-2 -->
+    <div class="flex-1 inline-flex flex-col items-center justify-center shadow-md bg-[#FFFFFF] gap-5 h-70 ">
+      <div class="bg-[#FFFFFF]  w-full flex justify-center  ">
+        <img src="../assets/cashback 1.svg" alt="">
+      </div>
+      <!-- card-foot -->
+      <div class="flex"><h2  class="text-[#151875] font-bold ">24/7 Support</h2></div>
+      <div class="flex flex-col  items-center justify-center ">   
+          <p class="text-[#1A0B5B4D] ">Lorem ipsum dolor sit amet, 
+          <p class="text-[#1A0B5B4D] ">consectetur adipisicing elit.</p>
+          <p class="text-[#1A0B5B4D] "> Massa purus gravida.</p>
+        </div>  
+    </div>
+    <!-- card-3 -->
+    <div class="flex-1 inline-flex flex-col items-center justify-center shadow-md bg-[#FFFFFF] gap-5 h-70 ">
+      <div class="bg-[#FFFFFF]  w-full flex justify-center  ">
+        <img src="../assets/premium-quality 1.svg" alt="">
+      </div>
+      <!-- card-foot -->
+      <div class="flex"><h2  class="text-[#151875] font-bold ">24/7 Support</h2></div>
+      <div class="flex flex-col  items-center justify-center ">   
+          <p class="text-[#1A0B5B4D] ">Lorem ipsum dolor sit amet, 
+          <p class="text-[#1A0B5B4D] ">consectetur adipisicing elit.</p>
+          <p class="text-[#1A0B5B4D] "> Massa purus gravida.</p>
+        </div>  
+    </div>
+    <!-- card-4 -->
+    <div class="flex-1 inline-flex flex-col items-center justify-center shadow-md bg-[#FFFFFF] gap-5 h-70 ">
+      <div class="bg-[#FFFFFF]  w-full flex justify-center  ">
+        <img src="../assets//24-hours-support 1.svg" alt="">
+      </div>
+      <!-- card-foot -->
+      <div class="flex"><h2  class="text-[#151875] font-bold ">24/7 Support</h2></div>
+      <div class="flex flex-col  items-center justify-center ">   
+          <p class="text-[#1A0B5B4D] ">Lorem ipsum dolor sit amet, 
+          <p class="text-[#1A0B5B4D] ">consectetur adipisicing elit.</p>
+          <p class="text-[#1A0B5B4D] "> Massa purus gravida.</p>
+        </div>  
+    </div>
+    </div>
+    
+   
+     
+    </div>
+   </div>
+<!-- close Shopex offer! -->
+ <!-- start new main content -->
+ <div class="bg-violet-100  w-full h-96 flex gap-10 items-center justify-center   relative ">
+  <div class="content-two w-80 flex absolute left-40 mb-80">
+    <img src="../assets/content/Ellipse 60.svg" alt="" class="absolute">
+    <img src="../assets/content/Ellipse 60.svg" alt="" class="absolute mt-6">
+    <img src="..//assets/Home-Stylish-Club-Sofa-Chair-Pleated-Sofa-Armchair-with-Golden-Legs 1.svg" alt="" class="absolute ">
+ 
+
+   </div>
+   <div class="content-one flex flex-col gap-4 max-w-md righ-5">
+
+    <!-- <p class="text-[#FB2E86] ">Best Furniture For Your Castle...</p> -->
+    <h1 class="font-bold text-2xl text-[#151875]">Unique Features Of leatest &
+      Trending Poducts</h1>
+      <ul class="flex flex-col gap-2 text-[#ACABC3] text-base">
+        <li class="flex items-center gap-2">  
+          <div class="w-3  ">
+          <div class="bg-[#F52B70] h-3 rounded-full " style="width: 100%"></div>
+        </div> All frames constructed with hardwood solids and laminates</li>
+
+        <li  class="flex items-center gap-2">
+          <div class="w-4.5  ">
+            <div class="bg-[#2B2BF5] h-3 rounded-full " style="width: 100%"></div>
+          </div>
+          Reinforced with double wood dowels, glue, screw - nails corner 
+          blocks and machine nails
+        </li>
+
+        <li  class="flex items-center gap-2">
+          <div class="w-3  ">
+            <div class="bg-[#2BF5CC] h-3 rounded-full " style="width: 100%"></div>
+          </div>
+          Arms, backs and seats are structurally reinforced</li>
+      </ul>
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in est adipiscing in phasellus non in justo.</p> -->
+     <div class="flex flex-row gap-5">
+    <button class="bg-[#FB2E86] text-white px-6 py-3 w-40 rounded-sm hover:bg-pink-600 transition ">
+      Shop Now
+    </button>
+    <div class="flex flex-col">
+    <p class="text-[#151875] ">B&B Italian Sofa </p>
+    <p class="text-[#151875] ">$32.00</p>
+  </div>
+  </div>
+   </div>
+ 
+   
+</div> 
+<!-- close -->
+
+<!-- start product -->
+<div class="description flex items-center justify-center">
+  <h2 class="font-bold text-[#1A0B5B] p-5  m-auto">Trending Products</h2>
+ </div>
+
+
+ <div class="featured-pt max-w-screen-lg mx-auto flex gap-5 h-77">
+  <!-- card-1 -->
+  <div class="flex-1 inline-flex flex-col items-center  shadow-xl  p-3 bg-[#ffff]">
+    <div class="bg-[#F6F7FB] pt-5 w-full flex justify-center  ">
+      <img src="../assets/box for image.svg" alt="">
+    </div>
+    <!-- card-foot -->
+    <div class="card-foot max-w-screen-lg bg-[#FFFFFF]  flex flex-col gap-2 items-center justify-center w-full p-5 ">
+      <h2  class="text-[#151875] font-bold ">Cantilever chair</h2>         
+      <p class="text-[#151875]"><span>$42.00</span> <span class="text-[#1518754D] text-decoration-line: line-through  ">$42.00</span></p>
+    </div>
+  </div>
+  
+  <!-- card-2 -->
+  <div class="flex-1 inline-flex flex-col items-center  shadow-xl  p-3 bg-[#ffff]">
+    <div class="bg-[#F6F7FB] pt-5 w-full flex justify-center  ">
+      <img src="../assets/box for image (1).svg" alt="">
+    </div>
+    <!-- card-foot -->
+    <div class="card-foot max-w-screen-lg bg-[#FFFFFF]  flex flex-col gap-2 items-center justify-center w-full p-5 ">
+      <h2  class="text-[#151875] font-bold ">Cantilever chair</h2>         
+      <p class="text-[#151875]"><span>$42.00</span> <span class="text-[#1518754D] text-decoration-line: line-through  ">$42.00</span></p>
+    </div>
+  </div>
+  <!-- card-3 -->
+  <div class="flex-1 inline-flex flex-col items-center  shadow-xl  p-3 bg-[#ffff]">
+    <div class="bg-[#F6F7FB] pt-5 w-full flex justify-center  ">
+      <img src="../assets/box for image (2).svg" alt="">
+    </div>
+    <!-- card-foot -->
+    <div class="card-foot max-w-screen-lg bg-[#FFFFFF]  flex flex-col gap-2 items-center justify-center w-full p-5 ">
+      <h2  class="text-[#151875] font-bold ">Cantilever chair</h2>         
+      <p class="text-[#151875]"><span>$42.00</span> <span class="text-[#1518754D] text-decoration-line: line-through  ">$42.00</span></p>
+    </div>
+  </div>
+  <!-- card-4 -->
+  <div class="flex-1 inline-flex flex-col items-center  shadow-xl  p-3 bg-[#ffff]">
+    <div class="bg-[#F6F7FB] pt-5 w-full flex justify-center  ">
+      <img src="../assets/image 32 (1).svg" alt="">
+    </div>
+    <!-- card-foot -->
+    <div class="card-foot max-w-screen-lg bg-[#FFFFFF]  flex flex-col gap-2 items-center justify-center w-full p-5 ">
+      <h2  class="text-[#151875] font-bold ">Cantilever chair</h2>         
+      <p class="text-[#151875]"><span>$42.00</span> <span class="text-[#1518754D] text-decoration-line: line-through  ">$42.00</span></p>
+    </div>
+  </div>
+</div>
+<!-- close card -->
+
+
+ <div class=" max-w-screen-lg mx-auto flex gap-5 h-72 m-10 ">
+  <!-- card-1 -->
+ <div class=" flex-1 inline-flex flex-col  shadow-sm gap-5 bg-[pink] p-1 font ">
+ <div class=" ">
+ <h2 class="text-[#151875] text-2xl">23% off in all products</h2>
+ <a href="#" class="text-[#FB2E86] text-decoration-line: underline  underline-offset-5  text-base">Shop Now</a>
+ </div>
+ <div class=" flex m-auto">
+  <img src="../assets/image 1162.svg" alt="char">
+ </div>
+ </div>
+ <!-- card-2 -->
+ <div class=" flex-1 inline-flex flex-col  shadow-sm gap-5 bg-[pink] p-1 font ">
+  <div class=" ">
+  <h2 class="text-[#151875] text-2xl">23% off in all products</h2>
+  <a href="#" class="text-[#FB2E86] text-decoration-line: underline  underline-offset-5  text-base">Shop Now</a>
+  </div>
+  <div class=" m-auto">
+   <img src="../assets/image 1161.svg" alt="char">
+  </div>
+  </div>
+<!-- card-3 -->
+<div class=" flex-1 inline-flex flex-col  shadow-sm gap-5  items-center justify-center p-2">
+  <!-- card-3-sub-one -->
+  <div class="flex flex-row gap-1">
+  <div class="bg-[#F5F6F8]">
+   <img src="../assets/image 30.svg" alt="char" class="w-20">
+  </div>
+  <div class=" flex flex-col">
+    <h2 class="text-[#151875] text-2xl">Executive Seat chair</h2>
+    <p class="text-[#151875] text-decoration-line: line-through  ">$32</p>
+
+    </div>
+  </div>
+  <!-- card-3-sub-two -->
+  <div class="flex flex-row gap-1">
+    <div class="bg-[#F5F6F8]">
+     <img src="../assets/image 19.svg" alt="char" class="w-20" >
+    </div>
+    <div class=" flex flex-col">
+      <h2 class="text-[#151875] text-2xl">Executive Seat chair</h2>
+      <p class="text-[#151875] text-decoration-line: line-through  ">$32</p>
+  
+      </div>
+    </div>
+  <!-- card-3-sub-three -->
+  <div class="flex flex-row gap-1">
+    <div class="bg-[#F5F6F8]">
+     <img src="../assets/image 28.svg" alt="char" class="w-20">
+    </div>
+    <div class=" flex flex-col">
+      <h2 class="text-[#151875] text-2xl">Executive Seat chair</h2>
+      <p class="text-[#151875] text-decoration-line: line-through  ">$32</p>
+  
+      </div>
+    </div>
+  </div>
+</div>
+<!-- close product -->
+
+<div class="description flex items-center justify-center flex-col m-10 ">
+  <div>
+  <h2 class="font-bold text-[#1A0B5B] p-5  m-auto">Discount Item</h2>
+</div>
+<div>
+  <ul class="list-none flex gap-10 text-[#151875]">
+  <li><a href="#"><span class="text-[#FB2E86]  text-decoration-line: underline  underline-offset-5">Wood Chair</span></a></li>
+  <li><a href="#" >Plastic Chair</a></li>
+  <li><a href="#">Sofa Collection</a></li>
+</ul>
+</div>
+</div>
+
+
+<div class="h-100 gap-10 flex flex-row items-center justify-center">
+  <!-- disscription -->
+<div class="flex flex-col gap-5">
+<h2 class="text-[#151875]">20% Discount Of All Products</h2>
+<p class="text-[#FB2E86]">Eams Sofa Compact</p>
+<div class="">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu eget</p>
+<p> feugiat habitasse nec, bibendum condimentum.</p>
+</div>
+<div class="flex flex-row gap-10">
+  <div class="flex flex-col gap-5 ">
+    <p><i class="fa-solid fa-check text-[#7569B2]"></i>Material expose like metals</p>
+    <p><i class="fa-solid fa-check text-[#7569B2]"></i>Clear lines and geomatric figures</p>
+  </div>
+  <div class="flex flex-col gap-5">
+    <p><i class="fa-solid fa-check text-[#7569B2]"></i>Simple neutral colours.</p>
+    <p><i class="fa-solid fa-check text-[#7569B2]"></i>Material expose like metals</p>
+  </div>
+</div>
+<div >
+  <button class="bg-[#FB2E86] text-[#FFFFFF] p-2 w-30 rounded-sm">Shop Now</button>
+</div>
+</div>
+<!-- images -->
+<div class="flex ">
+  <img src="../assets/tortuga-01-b 1.svg" alt="sofa" class="w-100 ">
+</div>
+</div>
+
+<div class="description flex items-center justify-center">
+  <h2 class="font-bold text-[#1A0B5B] p-5  m-auto">Top Categories</h2>
+</div>
+
+<div class="featured-pt max-w-screen-lg mx-auto flex gap-5 h-72 m-10">
+  <!-- card-1 -->
+  <div class="flex-1 inline-flex flex-col items-center  shadow-xl p-2  ">
+    <div class="bg-[gray] pt-5  flex justify-center rounded-full w-[180px] h-[180px] shadow-[-5px_3px_0px_1px_rgba(0,0,0,1)]">
+     <img src="https://s3-alpha-sig.figma.com/img/b385/2c7e/ad352f97e7cdd9b4848c0ae24630f6ae?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OInGXSHWLpJPOL07WTgKuwVkJEBYgYZluAhedylfsge5M5WqEfRNkzb9y9OsqVykQQ6lCSiihPvTGs7lOvKJj5Z19QN9HqqVnW7OoJLeiQKQmAJSRZ1DA0~grujPlt~SRgtq0hK6KSwDZE1CkX-rz7-~~jsIldighjhUPWYlsDQV36g~TN6pMT5IBoxaY6RXwcWOQDbAlEtA3PFd--W9f57eAZEB9RkByOI8t~7FbyikwCx4LHu6wfWyjYKfGbCjhQpbiwLCdGWXqFvnrmdFST4gn6WFTZqh-I26v43bx4v1DNDOyJEd5p8lTqF72BQ6pXd5a563zhSEsmgjEE-Yqg__" alt="">
+    </div>
+    <div>
+      <button class="bg-green-400 rounded-sm p-1 w-25">View Shop</button>
+    </div>
+     <!-- card-foot -->
+    <div class=" flex flex-col  items-center">
+      <h2  class="text-[#151875] font-bold ">Cantilever chair</h2>         
+       <p class="text-[#151875]"><span>$42.00</span> </p>
+    </div>
+ </div>
+  <!-- card-2 -->
+  <div class="flex-1 inline-flex flex-col items-center  shadow-xl p-2  ">
+    <div class="bg-[#F6F7FB] pt-5  flex justify-center rounded-full w-[200px] h-[200px]  ">
+      <img src="../assets/card-1/chair-1.svg" alt="">
+    </div>
+     <!-- card-foot -->
+    <div class="flex flex-col  items-center">
+      <h2  class="text-[#151875] font-bold ">Cantilever chair</h2>         
+      <p class="text-[#151875]"><span>$42.00</span> </p>
+    </div>
+ </div>
+
+  <!-- card-3 -->
+  <div class="flex-1 inline-flex flex-col items-center  shadow-xl p-2  ">
+    <div class="bg-[#F6F7FB] pt-5  flex justify-center rounded-full w-[200px] h-[200px] ">
+      <img src="https://s3-alpha-sig.figma.com/img/6eac/9ed6/f0567dbeace7c9dbaa02b7b75570f3bc?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Bfphm5IBgfG49aFTKvykIdLusJfWSpIZfaGfJPD~k~iXQgg59FlHdTGp6CvZItLjHNSAalZkgVSbJdvP3WL17xXj9dxuoLu30Guhc-04rU7-EbZy-SCbTF~DGAMSBU3lWxZCOvmv0eWqYATHbjjc3iYi-EYs3Q2IxedwHNHLzWRL2aSxJk8q49Toj--fpeWvjJiqRV~WXWgG5-U~ofJHzdj7GTkFUfnUXR22ss5X~kXCDVXpCpk-AF50oCU1QdOddj2Rn1XD21ZnGA3q8GzO56dKPo7IQvs~YYa7~jBLmXAw10rE076jo5qkYZmld7pJawQOxfmuVDP-~-uy1NohCA__" alt="">
+    </div>
+     <!-- card-foot -->
+    <div class="flex flex-col  items-center">
+      <h2  class="text-[#151875] font-bold ">Cantilever chair</h2>         
+      <p class="text-[#151875]"><span>$42.00</span> </p>
+    </div>
+ </div>
+   <!-- card-4 -->
+   
+   <div class="flex-1 inline-flex flex-col items-center  shadow-xl p-2  ">
+    <div class="bg-[#F6F7FB] pt-5  flex justify-center rounded-full w-[200px] h-[200px] ">
+      <img src="https://s3-alpha-sig.figma.com/img/b385/2c7e/ad352f97e7cdd9b4848c0ae24630f6ae?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OInGXSHWLpJPOL07WTgKuwVkJEBYgYZluAhedylfsge5M5WqEfRNkzb9y9OsqVykQQ6lCSiihPvTGs7lOvKJj5Z19QN9HqqVnW7OoJLeiQKQmAJSRZ1DA0~grujPlt~SRgtq0hK6KSwDZE1CkX-rz7-~~jsIldighjhUPWYlsDQV36g~TN6pMT5IBoxaY6RXwcWOQDbAlEtA3PFd--W9f57eAZEB9RkByOI8t~7FbyikwCx4LHu6wfWyjYKfGbCjhQpbiwLCdGWXqFvnrmdFST4gn6WFTZqh-I26v43bx4v1DNDOyJEd5p8lTqF72BQ6pXd5a563zhSEsmgjEE-Yqg__" alt="">
+    </div>
+     <!-- card-foot -->
+    <div class="flex flex-col  items-center">
+      <h2  class="text-[#151875] font-bold ">Cantilever chair</h2>         
+      <p class="text-[#151875]"><span>$42.00</span> </p>
+    </div>
+ </div>
+  </div>
+  <!-- close -->
+
+   <!-- start  -->
+    <div class="flex items-center justify-center mb-40 ">
+      <div class=" bg-cover bg-center h-64 w-full ">
+        <img src="../assets/Rectangle 102.png" alt="" class="relative flex">
+      </div>
+   
+      <div class="font-bold  absolute flex flex-col gap-4 items-center justify-center ">
+        <h2  >Get Leatest Update By Subscribe </h2>
+        <h2>0ur Newslater</h2>
+        <button class="bg-[#FB2E86] text-white p-2 rounded-md w-30 ">Shop Now</button>
+      </div>
+   
+    
+    </div>
+
+    <div class="flex items-center justify-center left-4">
+<img src="../assets/image 1174.svg" alt="all brand" class=" flex">
+    </div>
+
+   <!-- close -->
+
+
+
+   <!-- start -->
+    
+   <div class=" flex items-center justify-center m-2">
+    <h2 class="font-bold text-[#1A0B5B] p-5  m-auto ">Leatest Blog</h2>
+   </div>
+
+   
+    
+    
+      <div class="max-w-screen-lg mx-auto flex gap-8 ">
+         <!-- card-1 -->
+<div class="flex-1 inline-flex flex-col  shadow-sm gap-5 ">
+<div class=" ">
+  <img src="../assets/JIUjvqe2ZHg.svg" alt="" class="rounded-sm">
+</div>
+<div class="flex  flex-col gap-2 pl-4 pr-4 pb-4">
+  <div class="flex  justify-between gap-2 text-[#151875] ">
+    <span class="flex" ><img src="../assets/Vector.svg" alt="pen" class="" >SaberAli</span>
+      <span class="flex"><img src="../assets/Vector (1).svg" alt="">21 August.2020</span>
+    </div>
+ <div><h2 class="font-bold text-[#151875]">Top essential Trends in 2021</h2></div>
+ <div><p class="text-[#72718F]">More off this less hello samlande lied much</p>
+<p class="text-[#72718F]">over tightly circa horse taped mightly</p>
+</div>
+<div>
+  <a href="#" class="text-[#151875] decoration-gray-300 text-decoration-line: underline  underline-offset-5">Read More</a>
+</div>
+</div>
+</div>
+
+<!-- card-2 -->
+<div class="flex-1 inline-flex flex-col  shadow-sm gap-5 ">
+  <div class=" ">
+    <img src="https://s3-alpha-sig.figma.com/img/e3c4/499d/9a11a4d1f9f95293b7180830d656c096?Expires=1740960000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=da-KHfL~jygFGcHGgPp2zOSFFCksLJIkdJZWQy6x-z7iyLbLJiW9SqFPGgdkdPtMV5C9Q-fX7tkfDJeAdUZ8j3EVbdB8uOWD~AWtvXRUscyPPz-OJg1-T5SRdNREmwva58GoTYsPEh-NL4A7VDlf43tDyukDS83P2Uyi1SlIouHu-1Q32NLd-JslAJ6MJkAhhNAnWP~iuObwAEAAP-jQLJceD1bOPGFxyvmzMm2zx70qPRt-Geay05bRRjKcgxCYINhSZQbY4SwPafeCRxReu7rJE8R17w7sgb5V5wH1qwe4HrzFqueJPe4oTydarrcl0VFfsEF0FPtZDZFxutNytQ__" alt="" class="rounded-sm">
+  </div>
+  <div class="flex  flex-col gap-2 pl-4 pr-4 pb-4">
+    <div class="flex  justify-between gap-2 text-[#151875] ">
+      <span class="flex" ><img src="../assets/Vector.svg" alt="pen" class="" >SaberAli</span>
+        <span class="flex"><img src="../assets/Vector (1).svg" alt="">21 August.2020</span>
+      </div>
+   <div><h2 class="font-bold text-[#151875]">Top essential Trends in 2021</h2></div>
+   <div><p class="text-[#72718F]">More off this less hello samlande lied much</p>
+  <p class="text-[#72718F]">over tightly circa horse taped mightly</p>
+  </div>
+  <div>
+    <a href="#" class="text-[#151875] decoration-gray-300 text-decoration-line: underline  underline-offset-5">Read More</a>
+  </div>
+  </div>
+  </div>
+<!-- card-3 -->
+
+<div class="flex-1 inline-flex flex-col  shadow-sm gap-5 ">
+  <div class=" ">
+    <img src="../assets/2dcYhvbHV-M.svg" alt="" class="rounded-sm">
+  </div>
+  <div class="flex  flex-col gap-2 pl-4 pr-4 pb-4">
+    <div class="flex  justify-between gap-2 text-[#151875] ">
+      <span class="flex" ><img src="../assets/Vector.svg" alt="pen" class="" >SaberAli</span>
+        <span class="flex"><img src="../assets/Vector (1).svg" alt="">21 August.2020</span>
+      </div>
+   <div><h2 class="font-bold text-[#151875]">Top essential Trends in 2021</h2></div>
+   <div><p class="text-[#72718F]">More off this less hello samlande lied much</p>
+  <p class="text-[#72718F]">over tightly circa horse taped mightly</p>
+  </div>
+  <div>
+    <a href="#" class="text-[#151875] decoration-gray-300 text-decoration-line: underline  underline-offset-5">Read More</a>
+  </div>
+  </div>
+  </div>
+
+</div>
+    <!-- close -->
+
+
+
+
+
+
+
+
+
+
+<!-- footer -->
+
+   <div class="bg-[#EEEFFB] w-full h-90 flex flex-row justify-evenly p-10 mt-10">
+    <!-- logo -->
+    <div class="flex flex-col gap-6">
+      <h1 class="text-[#000000] font-bold text-2xl">Hekto</h1>
+    <form class="max-w-md bg-white rounded-md p-2 shadow-md">   
+      <div class="w-full flex items-center rounded-md justify-between">
+      <input type="search" id="default-search" class="block outline-none bg-transparent text-sm l placeholder:pl-4text-[#8A8FB9] border-none " placeholder="Enter Email Address" required />
+      <button class="bg-pink-600 px-5 py-2 rounded-md text-white">Sign Up</button>
+     </div>
+    </form>
+    <div class=" flex flex-col gap-4">
+    <p class="text-[#8A8FB9]">Contact info</p>
+    <p class="text-[#8A8FB9]">17 Princess Road, London, Greater London NW1 8JR, UK</p>
+   </div>
+   </div>
+ <!-- catagories -->
+    <div class="flex flex-col gap-7">
+     <h2 class="text-[#000000] text-2xl">Catagories</h2>
+     <div class="text-[#8A8FB9] flex flex-col gap-4 text-base">
+      <p>Laptops & Computers</p>
+      <p>Cameras & Photography</p>
+      <p>Smart Phones & Tablets</p>
+      <p>Video Games & Consoles</p>
+      <p>Waterproof Headphones</p>
+     </div>
+    </div>
+<!-- Customer care -->
+<div class="flex flex-col gap-7">
+  <h2 class="text-[#000000] text-2xl">Customer Care</h2>
+  <div class="text-[#8A8FB9] flex flex-col gap-4 text-base">
+   <p>My Account</p>
+   <p>Discount</p>
+   <p>Returns</p>
+   <p>Orders History</p>
+   <p>Order Tracking</p>
+  </div>
+ </div>
+ <!-- pages -->
+ <div class="flex flex-col gap-7">
+  <h2 class="text-[#000000] text-2xl">Pages</h2>
+  <div class="text-[#8A8FB9] flex flex-col gap-4 text-base">
+   <p>Blog</p>
+   <p>Browse the Shop</p>
+   <p>Category</p>
+   <p>Pre-Built Pages</p>
+   <p>Visual Composer Elements</p>
+   <p>WooCommerce Pages</p>
+  </div>
+ </div>
+  </div>
+  <!-- footer-button -->
+   <div class=" bg-[#E7E4F8] flex flex-row justify-around p-4">
+    <div><a href="#" class="text-[#9DA0AE]" >©Webecy - All Rights Reserved</a></div>
+    <div class="flex">
+      <img src="../assets/Group 202 (1).svg" alt="">
+      <img src="../assets/bx_bxl-instagram-alt.svg" alt=""  class="text-[#151875]">
+      <img src="../assets/Group 204 (1).svg" alt="">
+     
+    </div>
+   </div>
+  
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
